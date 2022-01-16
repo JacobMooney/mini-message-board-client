@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mini-message-board-client/static/css/main.b1546d81.css",
+    "main.js": "/mini-message-board-client/static/js/main.301ce59a.js",
+    "static/js/787.070db070.chunk.js": "/mini-message-board-client/static/js/787.070db070.chunk.js",
+    "index.html": "/mini-message-board-client/index.html",
+    "main.b1546d81.css.map": "/mini-message-board-client/static/css/main.b1546d81.css.map",
+    "main.301ce59a.js.map": "/mini-message-board-client/static/js/main.301ce59a.js.map",
+    "787.070db070.chunk.js.map": "/mini-message-board-client/static/js/787.070db070.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1546d81.css",
+    "static/js/main.301ce59a.js"
+  ]
+}
