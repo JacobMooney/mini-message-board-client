@@ -36,9 +36,12 @@ function NavBar() {
           Hope you enjoyed this mini message board. It was made using:
           <ul><h5 className="mt-3">Front End</h5>
             <li>React</li>
-            <li>Bootstrap, using Bootswatch themes</li>
+            <li>Bootstrap, using Bootswatch themes below</li>
+            <li><a>https://bootswatch.com/</a></li>
           </ul>
           <ul><h5 className="mt-3">Back End</h5>
+            <li>MongoDB</li>
+            <li>Mongodb Atlas</li>
             <li>Monk</li>
             <li>Morgan</li>
             <li>Express</li>

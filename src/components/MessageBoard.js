@@ -3,7 +3,6 @@ import "bootswatch/dist/minty/bootstrap.min.css";
 import { componentDidMount } from "react";
 import { Button, Container, FormGroup, Label } from "reactstrap";
 import Message from "./Message";
-// import DynamicStyles from "./DynamicStyles";
 
 class MessageBoard extends Component {
   constructor(props) {
