@@ -36,7 +36,7 @@ function Message(props) {
               ? messageInfo.imgURL
               : `https://picsum.photos/256/186`
           }
-          style={{ height: "50%", width: "50%" }}
+          style={{ height: "auto", width: "15em" }}
         />
         <span className="m-3">
           <CardHeader tag="h1" className={`text-white mb-3 ${accentColor}`}>
