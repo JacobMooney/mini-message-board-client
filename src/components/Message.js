@@ -20,15 +20,24 @@ let colors = [
   "bg-warning",
   "bg-info",
 ];
+
 let colorIndex = randColor();
 
-function Message(props) {
+function Message({ message }) {
   let bgColor = colors[colorIndex];
-  let accentColor = colors[colorIndex - 1];
-  let messageInfo = props.message;
+  let accentColor = colors[(colorIndex + 1) % colors.length];
+  let messageInfo = message;
+
+  //Useful way of looping array around: [(props.dayNum) % legs.legs.length]
+
+  console.log("Main -", bgColor);
+  console.log("Accent -", accentColor);
 
   return (
-    <Card className={`text-white ${bgColor} mb-3`}>
+    <Card
+      className={`text-white ${bgColor} mb-3 col mx-2`}
+      style={{ minWidth: "auto" }}
+    >
       <CardBody style={{ display: "flex" }}>
         <CardImg
           src={
@@ -42,8 +51,12 @@ function Message(props) {
           <CardHeader tag="h1" className={`text-white mb-3 ${accentColor}`}>
             {messageInfo.username}
           </CardHeader>
-          <CardTitle tag="h2">{messageInfo.subject}</CardTitle>
-          <CardText tag="h4">{messageInfo.message}</CardText>
+          <CardTitle style={{ fontSize: "2rem" }}>
+            {messageInfo.subject}
+          </CardTitle>
+          <CardText style={{ fontSize: "1.6rem" }}>
+            {messageInfo.message}
+          </CardText>
         </span>
       </CardBody>
       <CardFooter style={{ display: "flex", flexDirection: "row-reverse" }}>
