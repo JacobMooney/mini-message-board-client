@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "bootswatch/dist/minty/bootstrap.min.css";
 import { componentDidMount } from "react";
-import { Button, Container, FormGroup, Label } from "reactstrap";
+import { Button, Container, FormGroup, Label, Row } from "reactstrap";
 import Message from "./Message";
 
 class MessageBoard extends Component {
@@ -54,7 +54,7 @@ class MessageBoard extends Component {
     return (
       <Container className="mt-3">
         <Button
-          className="mb-3 btn-dark"
+          className="mt-3 btn-dark"
           onClick={() => this.setState({ showForm: !this.state.showForm })}
         >
           Add a post!
@@ -135,9 +135,11 @@ class MessageBoard extends Component {
             </fieldset>
           </form>
         )}
-        {messageArr.map((post) => {
-          return <Message message={post} key={post._id}></Message>;
-        })}
+        <Row>
+          {messageArr.map((post) => {
+            return <Message message={post} key={post._id}></Message>;
+          })}
+        </Row>
       </Container>
     );
   }

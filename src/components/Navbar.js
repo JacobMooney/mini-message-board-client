@@ -37,7 +37,7 @@ function NavBar() {
           <ul><h5 className="mt-3">Front End</h5>
             <li>React</li>
             <li>Bootstrap, using Bootswatch themes below</li>
-            <li><a>https://bootswatch.com/</a></li>
+            <li><a href="https://bootswatch.com">https://bootswatch.com/</a></li>
           </ul>
           <ul><h5 className="mt-3">Back End</h5>
             <li>MongoDB</li>
